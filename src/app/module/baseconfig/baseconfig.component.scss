@@ -1,0 +1,13 @@
+@import "./../../../style/default";
+
+.g-baseconfig-mn {
+	position: absolute;
+	left: $nav-router-width;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.g-baseconfig-mn.z-nav-no-text {
+	left: $nav-icon-width;
+}

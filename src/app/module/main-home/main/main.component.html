@@ -1,0 +1,77 @@
+<div class="cf" id="banner-deal">
+	<div id="banner">
+		<div class="bx-wrapper" style="max-width: 100%;">
+			<div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 489px;">
+				<ul id="slides" style="width: auto; position: relative;">
+					<li style="float: none; list-style: none; position: absolute; width: 803px; z-index: 50; display: block;">
+						<a href="javascript:;"><img
+							src="../../../../assets/copy-imgs/main-home/img-633242.jpg"
+							alt="" border="0"></a></li>
+					<li style="float: none; list-style: none; position: absolute; width: 803px; z-index: 0; display: none;">
+						<a href="https://www.cuff-daddy.com/coin-and-token-cufflinks.html"><img
+							src="../../../../assets/copy-imgs/main-home/img-633243.jpg"
+							alt="" border="0"></a></li>
+				</ul>
+			</div>
+			<div class="bx-controls bx-has-pager bx-has-controls-direction bx-has-controls-auto">
+				<div class="bx-pager bx-default-pager">
+					<div class="bx-pager-item"><a href="https://www.cuff-daddy.com/" data-slide-index="0"
+												  class="bx-pager-link active">1</a></div>
+					<div class="bx-pager-item"><a href="https://www.cuff-daddy.com/" data-slide-index="1"
+												  class="bx-pager-link">2</a></div>
+				</div>
+				<div class="bx-controls-direction"><a class="bx-prev" href="https://www.cuff-daddy.com/">Prev</a><a
+					class="bx-next" href="https://www.cuff-daddy.com/">Next</a></div>
+				<div class="bx-controls-auto">
+					<div class="bx-controls-auto-item"><a class="bx-stop"
+														  href="https://www.cuff-daddy.com/">Stop</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="deal-right">
+		<div class="deal-column">
+			<div class="corner"><span>Deal</span></div>
+			<div class="margin"><h3>Striped Onyx and Mother of Pearl Gold Cufflinks and Studs</h3>
+				<div class="deal-product"><a
+					href="https://www.cuff-daddy.com/striped-tuxedo-cufflinks-studs-onyx-mop-gold.html"><img
+					src="../../../../assets/copy-imgs/main-home/striped-onyx-and-mother-of-pearl-gold-cufflinks-and-studs-19.jpg"
+					width="180" height="180" border="0" hspace="0" vspace="0"
+					alt="Striped Onyx and Mother of Pearl Gold Cufflinks and Studs"></a></div>
+				<div class="prices cf">
+					<div class="reg-price">Regular Price:<br><span>$39.99</span></div>
+					<div class="today-price">Todays Price:<br><span>$24.95</span></div>
+					<div class="qty-left"><span class="qty">Qty<br>Left:</span>
+						<div class="number"><span>1</span><span>1</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="why-buy"><a href="https://www.cuff-daddy.com/collarstays.html"><img
+			src="../../../../assets/copy-imgs/main-home/img-633244.jpg" width="351"
+			height="165" border="0" hspace="0" vspace="0" alt="Best Sellers"></a></div>
+	</div>
+</div>
+<div class="cf" id="middle">
+	<div class="pb1"><a routerLink="/product-list"><img
+		src="../../../../assets/copy-imgs/main-home/img-633245.jpg" alt=""
+		border="0"></a></div>
+	<div class="pb2"><a href="https://www.cuff-daddy.com/novelty-cufflinks.html"><img
+		src="../../../../assets/copy-imgs/main-home/img-633246.jpg" alt=""
+		border="0"></a></div>
+	<div class="pb3"><a href="https://www.cuff-daddy.com/tuxedostudsets.html"><img
+		src="../../../../assets/copy-imgs/main-home/img-633247.jpg" alt=""
+		border="0"></a></div>
+</div>
+<com-product-row
+	*ngFor="let rowItem of productRowList"
+	[rowTitle] = rowItem.title
+	[viewUrl] = rowItem.title
+>
+	<com-product-list
+		[list] =  rowItem.productList
+	>
+
+	</com-product-list>
+</com-product-row>
+

@@ -1,0 +1,36 @@
+<div class="container">
+	<h1>{{productBrief.title}}</h1>
+	<div class="cat-img"></div>
+	<p>{{productBrief.subTitle}}</p>
+	<p class="product_content">
+		{{productBrief.brief}}
+	</p>
+
+	<app-page-container
+		[pageIndex] = pageParams.pageIndex
+		[total] = total
+		[pageSize] = pageParams.pageSize
+		(pageChange) = "goPage($event)"
+	>
+
+	</app-page-container>
+	<div class="products">
+		<com-product-list
+			[list] = pageDataList
+			hasListPrice = true
+		></com-product-list>
+	</div>
+	<app-page-container
+		[pageIndex] = pageParams.pageIndex
+		[total] = total
+		[pageSize] = pageParams.pageSize
+		(pageChange) = "goPage($event)"
+	>
+
+	</app-page-container>
+</div>
+<div class="bottom-content">
+	<div class="bottom-note text" style="    white-space: pre-wrap;">
+		{{productBrief.bottomBrief}}
+	</div>
+</div>

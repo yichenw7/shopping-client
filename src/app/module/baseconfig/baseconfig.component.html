@@ -1,0 +1,14 @@
+<util-route-nav
+	[canToggleIcon]="true"
+	[isOnlyIcon]="navIsOnlyIcon"
+	*ngIf="navList"
+	[navList]="navList"
+	(onlyIconChange)="navToggleIcon($event)"
+>
+</util-route-nav>
+
+<div class="g-baseconfig-mn"
+	 [ngClass]="{'z-nav-no-text': navIsOnlyIcon}"
+>
+	<router-outlet></router-outlet>
+</div>

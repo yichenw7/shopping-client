@@ -1,0 +1,40 @@
+<app-nav-accordion closeOthers="true">
+
+	<div class="u-nav-control-btn f-usn "
+		 (click)="toggleOnlyIcon()">
+		<i class="icon-menu i-menu-open"
+		   [ngClass]="{'i-menu-close': isOnlyIcon,'i-menu-open': !isOnlyIcon}"
+		></i>
+	</div>
+	<app-accordion-group
+		[panelClass]="'u-nav'"
+		*ngFor="let navItem of navList;index as navIndex;"
+		[headingObj]="navItem"
+	>
+		<div accordion-heading class="clearfix">
+					<span class="header-icon-cntr ">
+						<i class="header-icon "
+						   [ngClass]="{'z-hide': ! navItem.isActive ,'z-show': navItem.isActive}"></i>
+					</span>
+			<span class="header-text"
+				  [ngClass]="{'z-nav-no-text':isOnlyIcon}"
+			>{{navItem.name}}</span>
+		</div>
+
+		<div class="u-nav-content">
+			<a class="content i-hover "
+			   routerLink="{{navItem.path}}"
+			   routerLinkActive="z-active"
+			>
+					<span class="content-icon-cntr">
+						<i class="content-icon z-show"
+						   [ngClass]="navItem.icon"
+						></i>
+					</span>
+				<span class="content-text"
+					  [ngClass]="{'z-nav-no-text':isOnlyIcon}"
+				>{{navItem.name}}</span>
+			</a>
+		</div>
+	</app-accordion-group>
+</app-nav-accordion>

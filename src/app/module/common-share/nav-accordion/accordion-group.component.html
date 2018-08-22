@@ -1,0 +1,21 @@
+<div class="panel card" [ngClass]="panelClass">
+	<div class="card-header"
+		 role="tab"
+		 *ngIf="!noHeading"
+		 (click)="toggleOpen($event)">
+		<div class="u-nav-header">
+			<div role="button" class="accordion-toggle"
+				 [attr.aria-expanded]="isOpen">
+				<div *ngIf="heading" [ngClass]="{'text-muted': isDisabled}">
+					{{ heading }}
+				</div>
+				<ng-content select="[accordion-heading]"></ng-content>
+			</div>
+		</div>
+	</div>
+	<div class="panel-collapse collapse" role="tabpanel" [appCollapse]="!isOpen">
+		<div class="panel-body card-block card-body">
+			<ng-content></ng-content>
+		</div>
+	</div>
+</div>

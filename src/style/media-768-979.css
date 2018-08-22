@@ -1,0 +1,242 @@
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+	*, :after, :before {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box
+	}
+
+	body {
+		background-image: none
+	}
+
+	#wrapper {
+		width: 98%;
+		position: relative
+	}
+
+	#mobileMenu {
+		display: block;
+		background: #3D4C57
+	}
+
+	#main-menu {
+		display: none
+	}
+
+	#top .title {
+		float: none;
+		position: absolute;
+		left: 0;
+		top: 0;
+		margin: 0;
+		width: 80%;
+		padding: 8px 10px
+	}
+
+	#top {
+		border-bottom: 1px solid #3D4C57
+	}
+
+	#top .top-nav {
+		float: none;
+		margin: 0;
+		height: 40px;
+		line-height: 40px
+	}
+
+	#top .top-nav ul {
+		text-align: center
+	}
+
+	#top .top-nav ul li {
+		float: none;
+		display: inline-block;
+		height: auto;
+		line-height: normal;
+		margin: 0 5px;
+		padding: 5px 0
+	}
+
+	#top .top-nav ul li a {
+		color: #3D4C57;
+		display: inline-block
+	}
+
+	#top .top-nav ul li a:hover {
+		color: #000;
+		border-bottom: 1px solid #000
+	}
+
+	#header {
+		height: auto;
+		margin-bottom: 20px;
+		margin-top: 10px
+	}
+
+	#header-middle {
+		float: right;
+		width: 370px;
+		margin-left: 50px
+	}
+
+	#search {
+		margin-bottom: 25px
+	}
+
+	#search .textbox {
+		width: 75%
+	}
+
+	#view-cart-call {
+		float: none;
+		clear: both;
+		margin: 0 auto;
+		width: 60%
+	}
+
+	#view-cart-call .cf {
+		display: none
+	}
+
+	.cart-detail {
+		margin: 5px 0 0
+	}
+
+	#mobileMenu .classics ul li a span, #mobileMenu .classics ul li a > img, #mobileMenu .color .right, #mobileMenu .designer ul li a br, #mobileMenu .designer ul li a > img, #mobileMenu .materials ul li a > img, #mobileMenu .materials ul.last .content, #mobileMenu .specialty ul li a br, #mobileMenu .specialty ul li a > img, #nav {
+		display: none
+	}
+
+	#banner, #deal-right {
+		float: none;
+		width: 100%
+	}
+
+	.deal-column {
+		float: left;
+		width: 49.5%
+	}
+
+	.why-buy {
+		float: right;
+		width: 49.5%;
+		height: 312px
+	}
+
+	.products ul, .products-row ul, .recent-products-row ul {
+		text-align: center
+	}
+
+	.products ul li, .products-row ul li, .recent-products-row ul li {
+		float: none;
+		display: inline-block;
+		margin: 0 20px 30px
+	}
+
+	.products ul li:nth-child(2n+1), .products-row ul li:nth-child(2n+1), .recent-products-row ul li:nth-child(2n+1) {
+		border-left: none
+	}
+
+	.best-sellers, .dress-fresh, .novelty-cufflinks, .pb1, .pb2, .pb3 {
+		width: 33%;
+		height: auto
+	}
+
+	.best-sellers img, .dress-fresh img, .novelty-cufflinks img, .pb1 img, .pb2 img, .pb3 img {
+		max-width: 100%;
+		display: block
+	}
+
+	#signup-newsletter {
+		height: 37px
+	}
+
+	ul.interests {
+		text-align: center
+	}
+
+	ul.interests li {
+		float: none;
+		display: inline-block;
+		margin: 2%;
+		width: 28%;
+		height: auto
+	}
+
+	ul.interests li img {
+		max-width: 100%;
+		display: block
+	}
+
+	ul.interests li .caption {
+		font-size: 15px;
+		width: 100%;
+		height: 45px
+	}
+
+	.product-item {
+		margin: 0
+	}
+
+	.product-item .item-left {
+		float: none;
+		width: 100%
+	}
+
+	.product-description ul {
+		width: 42%
+	}
+
+	.product-item .item-right {
+		float: none;
+		margin: 0;
+		width: 100%
+	}
+
+	.product-item .item-right .box {
+		float: left;
+		width: 45%;
+		margin: 0 2%
+	}
+
+	.product-item .item-right .button {
+		display: inline-block;
+		clear: both
+	}
+
+	.product-item .item-right .button a {
+		padding-right: 30px
+	}
+
+	.proslider-thumb ul li {
+		width: auto;
+		height: auto
+	}
+
+	.cart-detail, .smb-mc .minicart_c1 {
+		width: 180px
+	}
+
+	.smb-mc .mini_icon {
+		display: none
+	}
+
+	.faqs-inner {
+		text-align: center
+	}
+
+	.faqs-inner ul {
+		width: 100%;
+		float: none;
+		padding: 0;
+		white-space: normal;
+		text-align: left
+	}
+
+	.faqs-inner .lowest-logo {
+		float: none
+	}
+
+	.page-control a span.allico {
+		display: none
+	}
+}

@@ -1,0 +1,816 @@
+/*baseconfig*/
+.i-menu-open, .i-menu-close, .i-area, .i-unit, .i-user, .i-role, .i-device,
+.i-facelib, .i-task, .i-mapresource, .i-runplan, .i-systemproperties, .i-person, .i-area-node,
+.i-edit, .i-delete, .i-locate, .i-synchronize,
+.i-ivsserver, .i-videoserver, .i-proxyserver,
+.i-task-stop, .i-task-start,
+.i-circle-turn-up, .i-circle-turn-down,
+.i-circle-add,
+.i-checkbox-checked, .i-checkbox-part, .i-checkbox-none,
+.i-rect-turn-right, .i-rect-turn-down,
+.i-person-add,
+.i-edit-white, .i-delete-white,
+.i-close-red,
+.i-turn-down,
+.i-blue-eye,
+.i-person-ifo,
+.i-quit, .i-setUp, .i-userName, .i-btn-down, .i-btn-down,
+.i-face-than, .i-down-center, .i-start-voice, .i-close-voice,
+.i-start-layer, .i-close-layer, .i-suggestions {
+	background-image: url("../assets/images/icon.png");
+	display: block;
+	width: 16px;
+	height: 16px;
+}
+
+/*菜单图表*/
+.i-menu-open {
+	background-position: -128px -48px;;
+}
+
+.i-menu-close {
+	background-position: -144px -48px;
+}
+
+/*---------baseconfig nav----------*/
+.i-area {
+	background-position: 0 0;
+}
+
+.i-hover:hover .i-area,
+.z-active .i-area {
+	background-position: -16px 0;
+}
+
+.i-unit {
+	background-position: 0 -16px;
+}
+
+.i-hover:hover .i-unit,
+.z-active .i-unit {
+	background-position: -16px -16px;
+}
+
+.i-user {
+	background-position: 0 -32px;
+}
+
+.i-hover:hover .i-user,
+.z-active .i-user {
+	background-position: -16px -32px;
+}
+
+.i-person {
+	background-position: 0 -32px;
+}
+
+.i-hover:hover .i-person,
+.z-active .i-person {
+	background-position: -16px -32px;
+}
+
+.i-role {
+	background-position: 0 -48px;
+}
+
+.i-hover:hover .i-role,
+.z-active .i-role {
+	background-position: -16px -48px;
+}
+
+.i-proxyserver {
+	background-position: 0px -64px;
+}
+
+.i-hover:hover .i-proxyserver,
+.z-active .i-proxyserver {
+	background-position: -16px -64px;
+}
+
+.i-ivsserver {
+	background-position: 0px -80px;
+}
+
+.i-hover:hover .i-ivsserver,
+.z-active .i-ivsserver {
+	background-position: -16px -80px;
+}
+
+.i-videoserver {
+	background-position: 0px -96px;
+}
+
+.i-hover:hover .i-videoserver,
+.z-active .i-videoserver {
+	background-position: -16px -96px;
+}
+
+.i-device {
+	background-position: 0 -112px;
+}
+
+.i-hover:hover .i-device,
+.z-active .i-device {
+	background-position: -16px -112px;
+}
+
+.i-facelib {
+	background-position: 0 -128px;
+}
+
+.i-hover:hover .i-facelib,
+.z-active .i-facelib {
+	background-position: -16px -128px;
+}
+
+.i-task {
+	background-position: 0 -144px;
+}
+
+.i-hover:hover .i-task,
+.z-active .i-task {
+	background-position: -16px -144px;
+}
+
+.i-mapresource {
+	background-position: 0 -160px;
+}
+
+.i-hover:hover .i-mapresource,
+.z-active .i-mapresource {
+	background-position: -16px -160px;
+}
+
+.i-runplan {
+	background-position: 0 -176px;
+}
+
+.i-hover:hover .i-runplan,
+.z-active .i-runplan {
+	background-position: -16px -176px;
+}
+
+.i-systemproperties {
+	background-position: 0 -192px;
+}
+
+.i-hover:hover .i-systemproperties,
+.z-active .i-systemproperties {
+	background-position: -16px -192px;
+}
+
+/* 任务暂停 */
+.i-task-stop {
+	background-position: -32px -64px;
+}
+
+.z-disabled.i-task-stop,
+.z-disabled.z-active.i-task-stop,
+.z-disabled.i-hover:hover.i-task-stop {
+	background-position: -64px -48px;
+	cursor: not-allowed;
+}
+
+.i-hover:hover.i-task-stop,
+.z-active.i-task-stop {
+	background-position: -48px -64px;
+}
+
+/* 任务开启 */
+.i-task-start {
+	background-position: -32px -48px;
+}
+
+.i-hover:hover.i-task-start,
+.z-active.i-task-start {
+	background-position: -48px -48px;
+}
+
+/*===================*/
+.i-close-red {
+	background-position: -144px -32px;
+}
+
+.i-close-red:hover {
+	background-position: -128px -32px;
+	cursor: pointer;
+}
+
+/*录像下载弹窗取消*/
+.i-video-close, .i-down-com, .i-down-fail {
+	/*background: url(../../images/common/layer-icon.png) no-repeat;*/
+}
+
+.i-video-close {
+	background-position: 1px -40px;
+	cursor: pointer;
+}
+
+/*下载完成*/
+.i-down-com {
+	background-position: 0 0;
+	cursor: pointer;
+}
+
+/*下载失败*/
+.i-down-fail {
+	background-position: -30px 0;
+	cursor: pointer;
+}
+
+/*-----common icon button---------*/
+.i-edit,
+.i-edit.z-gray:hover {
+	background-position: -48px 0;
+}
+
+.i-edit.z-gray {
+	background-position: -32px 0;
+}
+
+.i-delete,
+.i-delete.z-gray:hover {
+	background-position: -48px -16px;
+}
+
+.i-synchronize,
+.i-synchronize.z-gray:hover {
+	background-position: -96px -48px;
+}
+
+.i-synchronize.z-gray {
+	background-position: -80px -48px;
+}
+
+.i-delete.z-gray {
+	background-position: -32px -16px;
+}
+
+.i-edit-white {
+	background-position: -144px 0;
+}
+
+.i-edit-white:hover {
+	background-position: -48px 0;
+}
+
+.i-delete-white {
+	background-position: -144px -16px;
+}
+
+.i-delete-white:hover {
+	background-position: -48px -16px;
+}
+
+.i-locate,
+.i-locate.z-gray:hover {
+	background-position: -48px -32px;
+}
+
+.i-locate.z-gray {
+	background-position: -32px -32px;
+}
+
+/*=========*/
+/*nav头部 设置icon*/
+.i-setUp {
+	background-position: -64px -144px;
+}
+
+/*nav头部 退出icon*/
+.i-quit {
+	background-position: -63px -160px;
+}
+
+/* 下载图标 */
+.i-btn-down {
+	background-position: -80px -81px;
+}
+
+/* 下载图标hover状态 */
+.i-btn-down:hover {
+	background-position: -96px -81px;
+}
+
+/*开启报警声音*/
+.i-start-voice {
+	background-position: -63px -113px;
+}
+
+/*关闭报警声音*/
+.i-close-voice {
+	background-position: -80px -112px;
+}
+
+/*开启报警弹窗*/
+.i-start-layer {
+	background-position: -64px -128px;
+}
+
+/*关闭报警弹窗*/
+.i-close-layer {
+	background-position: -81px -128px;
+}
+
+/* 人脸比对 */
+.i-face-than {
+	background-position: -80px -97px;
+}
+
+/* 下载中心 */
+.i-down-center {
+	background-position: -96px -97px;
+}
+
+/* 选项意见反馈 */
+.i-suggestions {
+	background-position: -112px -97px;
+}
+
+/*日期*/
+/*.i-date{*/
+/*background-position: -80px -32px;*/
+/*}*/
+
+/*.i-date:hover{*/
+/*background-position: -96px -32px;*/
+/*}*/
+/*=========*/
+/*日期*/
+.i-date {
+	/*background: url("../../images/common/riqi.png") center center no-repeat;*/
+	background-size: 20px 20px;
+}
+
+/*nav头部 用户icon*/
+.i-userName {
+	/*background: url("../../images/common/user.png")  center no-repeat;*/
+	background-size: 20px 20px;
+}
+
+/*白色加号*/
+.i-add {
+	/*background: url("../../images/common/add.png") center center no-repeat;*/
+	background-size: 15px 15px;
+}
+
+/*#666加号*/
+.i-gray-add {
+	/*background: url("../../images/common/grayadd.png") center center no-repeat;*/
+	background-size: 15px 15px;
+}
+
+/*下拉菜单中树形三角形操作前*/
+.i-roleHide {
+	/*background: url("../../images/baseconfig/roleHide.png") center no-repeat;*/
+	background-size: 16px 16px;
+}
+
+/*下拉菜单中树形三角形操作后*/
+.i-roleShow {
+	/*background: url("../../images/baseconfig/roleShow.png") center no-repeat;*/
+	background-size: 16px 16px;
+}
+
+/*中文*/
+.i-cn-en {
+	/*background: url("../../images/common/cn-en.png") center no-repeat;*/
+	background-size: 14px 14px;
+}
+
+/*摄像头*/
+.i-camera {
+	/*background: url("../../images/common/shexiangtou.png") center no-repeat;*/
+	background-size: 20px 20px;
+}
+
+/*=== 分页icon ===*/
+.i-pading-first {
+	/*background: url("../../images/common/shouye.png") center center no-repeat;*/
+	background-size: 12px 12px;
+}
+
+.i-pading-last {
+	/*background: url("../../images/common/weiye.png") center center no-repeat;*/
+	background-size: 12px 12px;
+}
+
+.i-pading-up {
+	/*background: url("../../images/common/shangyiye.png") center center no-repeat;*/
+	background-size: 12px 12px;
+}
+
+.i-pading-down {
+	/*background: url("../../images/common/xiayiye.png") center center no-repeat;*/
+	background-size: 12px 12px;
+}
+
+/*自定义select icon图标*/
+.i-select-down {
+	/*background: url("../../images/common/selectIcon.png") center center no-repeat;*/
+	background-size: 10px 10px;
+}
+
+/*======*/
+
+/*树节点图标*/
+.i-ztree-attention,
+.i-ztree-locate,
+.i-ztree-detail {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	/*background: url("../../images/dynamicControl/dynamicControl.png") center center no-repeat;*/
+}
+
+.i-ztree-locate {
+	background-position: -46px 0;
+}
+
+.i-ztree-locate:hover {
+	background-position: -32px 0;
+}
+
+.i-ztree-detail {
+	background-position: 0 -140px;
+}
+
+.i-ztree-detail:hover {
+	background-position: -16px -140px;
+}
+
+.i-ztree-attention.js-hide,
+.i-ztree-locate.js-hide,
+.i-ztree-detail.js-hide {
+	display: none;
+}
+
+.i-ztree-attention {
+	background-position: 0 0;
+}
+
+.i-ztree-attention.z-select {
+	background-position: -17px 0;
+}
+
+/* 灰色取消 */
+.i-btn-close {
+	display: block;
+	width: 12px;
+	height: 12px;
+	/*background: url("../../images/common/i-close-gray.png") center no-repeat;*/
+	background-size: 100% 100%;
+}
+
+/* 取消hover状态 */
+.i-btn-close:hover {
+	/*background: url("../../images/common/i-close-blue.png") center no-repeat;*/
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+/*淡蓝色取消*/
+.i-cancel {
+	/*background: url("../../images/common/quxiao.png") center no-repeat;*/
+	background-size: 14px 14px;
+}
+
+/*比对姓名图标*/
+.i-person-name {
+	/*background: url("../../images/toolOption/personName.png") center no-repeat;*/
+	background-size: 16px 16px;
+}
+
+/*===运维管理===*/
+.i-devicestatus, .i-userstatus, .i-operatelog, .i-licencestatus, .i-feedback {
+	/*background-image: url("../../images/maintain/maintain.png");*/
+	display: block;
+	width: 16px;
+	height: 16px;
+}
+
+.i-devicestatus {
+	background-position: 0 -16px;
+}
+
+.i-hover:hover .i-devicestatus,
+.z-active .i-devicestatus {
+	background-position: -16px -16px;
+}
+
+.i-userstatus {
+	background-position: 0 -32px;
+}
+
+.i-hover:hover .i-userstatus,
+.z-active .i-userstatus {
+	background-position: -16px -32px;
+}
+
+.i-operatelog {
+	background-position: 0 -48px;
+}
+
+.i-hover:hover .i-operatelog,
+.z-active .i-operatelog {
+	background-position: -16px -48px;
+}
+
+.i-licencestatus {
+	background-position: 0 -64px;
+}
+
+.i-hover:hover .i-licencestatus,
+.z-active .i-licencestatus {
+	background-position: -16px -64px;
+}
+
+.i-feedback {
+	background-position: 0 -79px;
+}
+
+.i-hover:hover .i-feedback,
+.z-active .i-feedback {
+	background-position: -16px -79px;
+}
+
+/*===统计分析===*/
+.i-totalgeneral, .i-totaltask, .i-totalalarm, .i-totalflow, .i-totaluser, .i-totalsearch {
+	/*background-image: url("../../images/total/totalmenu.png");*/
+	display: block;
+	width: 16px;
+	height: 16px;
+}
+
+.i-totalgeneral {
+	background-position: -32px 0;
+}
+
+.i-hover:hover .i-totalgeneral,
+.z-active .i-totalgeneral {
+	background-position: -48px 0;
+}
+
+.i-totaltask {
+	background-position: -32px -16px;
+}
+
+.i-hover:hover .i-totaltask,
+.z-active .i-totaltask {
+	background-position: -48px -16px;
+}
+
+.i-totalalarm {
+	background-position: -32px -32px;
+}
+
+.i-hover:hover .i-totalalarm,
+.z-active .i-totalalarm {
+	background-position: -48px -32px;
+}
+
+.i-totalflow {
+	background-position: -32px -48px;
+}
+
+.i-hover:hover .i-totalflow,
+.z-active .i-totalflow {
+	background-position: -48px -48px;
+}
+
+.i-totaluser {
+	background-position: -32px -64px;
+}
+
+.i-hover:hover .i-totaluser,
+.z-active .i-totaluser {
+	background-position: -48px -64px;
+}
+
+.i-totalsearch {
+	background-position: -32px -80px;
+}
+
+.i-hover:hover .i-totalsearch,
+.z-active .i-totalsearch {
+	background-position: -48px -80px;
+}
+
+/*统计总览图标*/
+.i-total-allCamera {
+	/*background: url("../../images/total/totalIcon.png") 0 0 no-repeat;*/
+}
+
+.i-total-normalCamera {
+	/*background: url("../../images/total/totalIcon.png") -60px 0 no-repeat;*/
+}
+
+.i-total-faceCamera {
+	/*background: url("../../images/total/totalIcon.png") -120px 0 no-repeat;*/
+}
+
+.i-total-vedioCamera {
+	/*background: url("../../images/total/totalIcon.png") 0 -60px no-repeat;*/
+}
+
+.i-total-bodyCamera {
+	/*background: url("../../images/total/totalIcon.png") -60px -60px no-repeat;*/
+}
+
+/*智能检索*/
+.i-trailAnalysis, .i-faceRetrieval, .i-alarmRetrieval, .i-retrievalRecord {
+	display: inline-block;
+	width: 24px;
+	height: 22px;
+	/*background-image:url("../../images/common/ico.png");;*/
+}
+
+.i-trailAnalysis {
+	background-position: -29px 2px;
+}
+
+.i-trailAnalysis:hover, .z-active .i-trailAnalysis {
+	background-position: 0 2px;
+}
+
+.i-faceRetrieval {
+	background-position: -29px -21px;
+}
+
+.i-faceRetrieval:hover, .z-active .i-faceRetrieval {
+	background-position: 0 -21px;
+}
+
+.i-alarmRetrieval {
+	background-position: -29px -44px;
+}
+
+.i-alarmRetrieval:hover, .z-active .i-alarmRetrieval {
+	background-position: 0 -44px;
+}
+
+.i-retrievalRecord {
+	background-position: -29px -68px;
+}
+
+.i-retrievalRecord:hover, .z-active.i-retrievalRecord {
+	background-position: 0 -68px;
+}
+
+/*图表上一页*/
+.i-echart-left {
+	/*background: url("../../images/common/alarm-left.png") center center no-repeat;*/
+	background-size: 32px 32px;
+}
+
+/*图表下一页*/
+.i-echart-right {
+	/*background: url("../../images/common/alarm-right.png") center center no-repeat;*/
+	background-size: 32px 32px;
+}
+
+/*========*/
+.i-retrievalRecord {
+	background-position: -29px -68px;
+}
+
+.i-retrievalRecord:hover .z-active, .i-retrievalRecord {
+	background-position: 0 -68px;
+}
+
+.i-retrievalRecord {
+	background-position: -29px -68px;
+}
+
+.i-retrievalRecord:hover, .z-active.i-retrievalRecord {
+	background-position: 0 -68px;
+}
+
+/*TODO 缺图*/
+
+.i-checkbox-checked {
+	background-position: -97px 0;
+}
+
+.i-checkbox-part {
+	background-position: -113px 0;
+}
+
+.i-checkbox-none {
+	background-position: -80px 0;
+}
+
+.i-circle-turn-up {
+	background-position: 18px -18px;
+	width: 18px;
+	height: 18px;
+}
+
+.i-circle-turn-down {
+	background-position: 18px 0;
+	width: 18px;
+	height: 18px;
+}
+
+.i-rect-turn-right {
+	background-position: -32px -160px;
+}
+
+.i-rect-turn-down {
+	background-position: -48px -160px;
+}
+
+.i-person-add,
+.i-person-add.z-gray:hover {
+	background-position: -48px -144px
+}
+
+.i-person-add.z-gray {
+	background-position: -32px -144px
+}
+
+.i-circle-add,
+.i-circle-add.z-gray:hover {
+	background-position: -48px -128px;
+}
+
+.i-circle-add.z-gray {
+	background-position: -32px -128px;
+}
+
+.i-turn-down {
+	background-position: 18px -36px;
+}
+
+.i-turn-down.z-gray,
+.z-gray .i-turn-down {
+	background-position: 18px -54px;
+}
+
+.i-turn-down.z-gray:hover,
+.z-gray:hover .i-turn-down {
+	background-position: 18px -70px;
+}
+
+.i-turn-down.z-active,
+.z-active .i-turn-down {
+	background-position: 18px -70px;
+}
+
+.i-turn-down.z-active:hover,
+.z-active:hover .i-turn-down {
+	background-position: 18px -36px;
+}
+
+.i-turn-down.z-disabled,
+.z-disabled .i-turn-down {
+	background-position: 18px -54px;
+}
+
+.i-turn-down.z-disabled:hover,
+.z-disabled:hover .i-turn-down {
+	background-position: 18px -54px;
+}
+
+.i-blue-eye {
+	background-position: -64px -160px;
+}
+
+.i-blue-eye:hover {
+	background-position: -80px -160px;
+}
+
+/************人员信息***************/
+.i-id-card {
+	background-position: -175px -1px;
+}
+
+.i-upDate-time {
+	background-position: -176px -17px;
+}
+
+.i-lib-name {
+	background-position: -176px -33px;
+}
+
+.i-Memo {
+	background-position: -176px -48px;
+}
+
+/*map-tree*/
+.i-map-ispoint {
+	/*background: url("../../images/baseconfig/islocate.png") center no-repeat;*/
+	background-size: 10px 7px;
+	width: 10px;
+	height: 7px;
+	display: inline-block;
+}
+
+.i-subcenterIcon {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: orange;
+	display: inline-block;
+	cursor: pointer;
+}

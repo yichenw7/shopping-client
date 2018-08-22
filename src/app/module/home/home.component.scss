@@ -1,0 +1,40 @@
+$home-nav-width: 160px;
+
+.g-home-nav {
+	display: block;
+	background-color: #383e4c;
+	overflow: hidden;
+	width: $home-nav-width
+}
+
+.g-home-main {
+	position: absolute;
+	left: $home-nav-width;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.home-slides {
+	.slide-img {
+		display: block;
+		margin: 0 auto;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;
+		-webkit-user-drag: none;
+		user-drag: none;
+		width: 100%;
+		height: auto;
+	}
+}
+
+.row-home-content ul > li {
+	padding: 10px;
+	text-align: center;
+}
+
+.footer {
+	background: #f8f9f9;
+}
+

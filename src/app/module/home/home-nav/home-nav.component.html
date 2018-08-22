@@ -1,0 +1,28 @@
+<div class="m-home-nav">
+	<app-nav-accordion closeOthers ="true">
+		<app-accordion-group
+
+			panelClass="u-nav"
+			noHeading="true"
+			*ngFor="let navItem of navList;index as navIndex;"
+			[headingObj]="navItem"
+		>
+
+			<div class="u-nav-content">
+				<a class="content i-hover "
+				   routerLink="{{navItem.path}}"
+				   routerLinkActive="z-active"
+				>
+					<span class="content-icon-cntr">
+						<i class="content-icon z-show"
+						   [ngClass]="navItem.icon"
+						></i>
+					</span>
+					<span class="content-text"
+
+					>{{navItem.name}}</span>
+				</a>
+			</div>
+		</app-accordion-group>
+	</app-nav-accordion>
+</div>

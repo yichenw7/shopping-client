@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+/*import 先于 其他的引入*/
+@import "./style/common.scss";
+@import "./style/default.scss";
+@import "./style/layout.scss";
+@import "./style/reset.css";
+@import "./style/icon.css";
+@import "./style/nav.css";
+@import "./style/copy/copy-style";
+
+ul, ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ol.carousel-indicators > li,
+ol.carousel-indicators > li.active {
+	margin: 0 5px;
+}
+
+.container-fluid {
+	max-width: 1440px;
+}
+
+.m-left-nav {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #383e4c;
+	overflow: hidden;
+}
+
+/*@import "./style/media-980-1024.css";
+@import "./style/media-768-979.css";*/
+/*@import "./style/media-320-767.css";*/
+
+

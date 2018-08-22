@@ -1,0 +1,36 @@
+@import "default";
+
+.g-head {
+
+}
+
+.g-main {
+	position: absolute;
+	top: $header-height;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ebeef1;
+	min-width: $body-min-width;
+	overflow: hidden;
+
+	.main-wrapper {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.g-head {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	min-width: $body-min-width;
+	z-index: 10000;
+	zoom: 1;
+	background-color: #1470f7;
+}

@@ -1,0 +1,329 @@
+.products ul {
+	margin: 0;
+	padding: 30px 0 17px;
+	list-style: none
+}
+
+.products ul li {
+	float: left;
+	width: 280px;
+	height: 336px;
+	border-left: 1px solid #e5e5e5;
+	transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	margin-bottom: 50px
+}
+
+.products ul li:hover {
+	background: #f7f7f7
+}
+
+.products ul li:nth-child(4n+1) {
+	border-left: none
+}
+
+.products .title {
+	text-align: center;
+	font-weight: 400;
+	padding-top: 5px;
+	height: 50px;
+	overflow: hidden
+}
+
+.products .title a {
+	text-decoration: none;
+	color: #000
+}
+
+.products .title a:hover {
+	text-decoration: underline
+}
+
+.products .pro-img {
+	display: table-cell;
+	width: 288px;
+	height: 215px;
+	text-align: center;
+	vertical-align: middle
+}
+
+.products .list-price {
+	float: left;
+	width: 100px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 18px;
+	margin-left: 11px
+}
+
+.products .list-price span {
+	font-family: Roboto, sans-serif;
+	font-size: 26px;
+	font-weight: 400;
+	text-decoration: line-through;
+	color: #6e6e6e
+}
+
+.products .our-price {
+	float: right;
+	width: 100px;
+	text-align: right;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 18px;
+	margin-right: 11px
+}
+
+.products .our-price span {
+	font-family: Roboto, sans-serif;
+	font-size: 26px;
+	font-weight: 400;
+	color: #e10000
+}
+
+.products .button {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-top: 10px
+}
+
+.products .button a {
+	background: #fa0;
+	color: #fff;
+	text-align: center;
+	width: 114px;
+	padding: 9px 0 7px;
+	display: block;
+	text-decoration: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin: 0 auto
+}
+
+.products .button a:hover {
+	background: #000
+}
+
+.pagination-container {
+	background: #f2f2f2;
+	height: 63px;
+	padding: 0 10px
+}
+
+.pagination {
+	float: left;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #545454;
+	height: 63px;
+	line-height: 63px;
+	margin-right: 0
+}
+
+.page-control {
+	float: right;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	height: 63px;
+	line-height: 63px
+}
+
+.page-control a {
+	color: #000;
+	text-decoration: none
+}
+
+.page-control a span.icon {
+	width: 8px;
+	height: 16px;
+	display: inline-block;
+	opacity: .5
+}
+
+.page-control.prev a span.icon {
+	background-image: url(https://sep.yimg.com/ty/cdn/yhst-36182171232078/page-prev-next.png);
+	background-position: 0 1px;
+	background-repeat: no-repeat;
+	margin-right: 2px
+}
+
+.page-control.next {
+	margin-left: 20px
+}
+
+.page-control.prev {
+	margin-left: 10px
+}
+
+.page-control.next a span.icon {
+	background-image: url(https://sep.yimg.com/ty/cdn/yhst-36182171232078/page-prev-next.png);
+	background-position: -8px 1px;
+	background-repeat: no-repeat;
+	margin-left: 2px
+}
+
+.page-control.all {
+	margin-right: 0
+}
+
+.page-control a span.allico {
+	margin-right: 0;
+	display: none;
+	color: #545454
+}
+
+.page-control a:hover span.icon {
+	opacity: 1
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	.products-row h2, .recent-products-row h2 {
+		font-size: 20px
+	}
+
+	.products-row ul {
+		width: 100%;
+		text-align: center
+	}
+
+	.products-row ul li {
+		float: none;
+		display: inline-block;
+		border-left: none;
+		border-top: 1px solid #e5e5e5;
+		height: auto;
+		padding: 10px 0
+	}
+
+	.products-row ul li:first-child {
+		border-top: none
+	}
+
+	.products ul, .recent-products-row ul {
+		text-align: center
+	}
+
+	.products ul li, .recent-products-row ul li {
+		float: none;
+		display: inline-block;
+		border-left: none;
+		border-bottom: 1px solid #e5e5e5;
+		height: auto;
+		padding: 10px 0;
+		margin: 0
+	}
+
+	.pagination-container {
+		height: 40px;
+		padding: 0 5px
+	}
+
+	.page-control, .pagination {
+		height: 40px;
+		line-height: 40px;
+		font-size: 14px
+	}
+
+	.page-control a span.text {
+		display: none
+	}
+
+	.page-control.allico {
+		display: block
+	}
+
+	.page-control a span.icon, .page-control.next, page-control.all {
+		margin: 0
+	}
+
+	.page-control a span.allico {
+		display: block
+	}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+	.page-control a span.allico {
+		display: none
+	}
+
+	.products ul, .products-row ul, .recent-products-row ul {
+		text-align: center
+	}
+
+	.products ul li, .products-row ul li, .recent-products-row ul li {
+		float: none;
+		display: inline-block;
+		margin: 0 20px 30px
+	}
+
+	.products ul li:nth-child(2n+1), .products-row ul li:nth-child(2n+1), .recent-products-row ul li:nth-child(2n+1) {
+		border-left: none
+	}
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1024px) {
+	.products-row ul li {
+		width: 238px
+	}
+
+	.products-row .pro-img {
+		width: 238px;
+		height: 170px
+	}
+
+	.products-row .button a {
+		width: 90px
+	}
+
+	.products ul li {
+		width: 230px
+	}
+
+	.products .pro-img {
+		width: 230px;
+		height: 170px
+	}
+
+	.products .button a {
+		width: 90px
+	}
+
+	.recent-products-row .pro-img, .recent-products-row ul li {
+		width: 234px
+	}
+
+	.recent-products-row .button a, .recent-products-row .price {
+		width: 100px
+	}
+
+	.page-control a span.allico {
+		display: none
+	}
+}
+
+.cat-img img {
+	height: inherit;
+	margin-bottom: 10px;
+	max-width: 100%
+}
+
+.pagination {
+	display: block;
+	padding: 0;
+	margin: 0;
+	border-radius: 0;
+}

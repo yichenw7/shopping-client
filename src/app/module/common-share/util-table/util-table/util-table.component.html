@@ -1,0 +1,56 @@
+<div class="m-table-content">
+	<div class="table-head">
+		<table class="fn-table">
+			<colgroup></colgroup>
+			<tbody class="fn-thead">
+			<tr>
+				<td class="f-cfb"
+					[ngClass]="{'has-text-indent':hasCheck}"
+					*ngIf="hasSerial"
+				>
+
+					<label class="table-check-label"
+						   *ngIf="hasCheck"
+						   (click)="changeTrCheckBoxStatus(-1)">
+						<i class="table-check-box"
+						   [ngClass]="{'i-checkbox-checked': checkBoxAll === 1,
+									'i-checkbox-none': checkBoxAll === 0,
+									'i-checkbox-part': checkBoxAll === -1
+									}"
+						></i>
+					</label>
+
+					<span>序号</span>
+				</td>
+
+				<td *ngFor="let headTd of tableHeadTds;index as headTdIndex"
+					ng-if="header.isShow">
+
+						<span title="{{headTd.title}}">
+							{{headTd.title}}
+						</span>
+
+					<label *ngIf="headTd.isSort"
+						   (click)="tableBySort(headTdIndex)">
+					</label>
+
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="table-body">
+		<table class="fn-table" *ngIf="!tableNoData">
+			<colgroup></colgroup>
+			<tbody class="fn-tbody">
+			<ng-content></ng-content>
+			</tbody>
+		</table>
+		<div class="table-no-data"
+			 *ngIf="tableNoData"
+		>
+
+		</div>
+	</div>
+</div>
